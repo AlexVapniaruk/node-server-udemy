@@ -1,4 +1,4 @@
-# node-server-udemy
+# react-client-udemy
 Step by step udemy course
 
 1. Create config folder with keys.js
