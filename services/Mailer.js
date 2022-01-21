@@ -1,6 +1,6 @@
 const { response } = require('express');
-const senddrid = require('sendgrid');
-const helper = senddrid.mail;
+const sendgrid = require('sendgrid');
+const helper = sendgrid.mail;
 const keys = require('../config/keys');
 
 class Mailer extends helper.Mail {
@@ -47,7 +47,7 @@ class Mailer extends helper.Mail {
             body: this.toJSON()
         });
 
-        const response = await this.sgApi.API(request);
+        const response = []//await this.sgApi.API(request);
         return response;
     }
 }
